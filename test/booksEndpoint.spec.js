@@ -24,7 +24,6 @@ describe("GET /api/v1/books", () => {
   });
 
   it("responds with list of books as an array", () => {
-    console.table(response.body)
     expect(response.body.books)
       .to.be.an("array");
   });
